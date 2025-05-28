@@ -1,0 +1,8 @@
+.debug-box {
+  width: 300px;
+  height: 100px;
+  background-color: #c5e1a5;
+  margin: auto;
+  text-align: center;
+  line-height: 100px;
+}
