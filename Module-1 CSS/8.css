@@ -1,0 +1,18 @@
+.eventCard {
+  border: 2px solid #90caf9;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+}
+
+.highlighted {
+  outline: 2px dashed #ff5252;
+}
+
+.hiddenBox {
+  visibility: hidden;
+}
+
+.noneBox {
+  display: none;
+}
