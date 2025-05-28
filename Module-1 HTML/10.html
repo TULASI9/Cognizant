@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 10 - Debugging</title>
+  <style>
+    #debugBox { width: 300px; height: 100px; background: #eee; margin: 20px; }
+  </style>
+</head>
+<body>
+  <h2>Debugging Example</h2>
+  <div id="debugBox">Right-click → Inspect to debug styles.</div>
+
+  <script>
+    console.log("Debugging Task Running");
+
+    let data = "Inspect this in DevTools";
+    console.log("Data variable:", data);
+
+    
+    function testDebugger() {
+      let x = 10;
+      let y = 20;
+      let result = x + y;
+      console.log("Result:", result); // Breakpoint here
+    }
+
+    testDebugger();
+  </script>
+</body>
+</html>
