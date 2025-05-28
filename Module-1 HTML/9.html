@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 9 - Geolocation</title>
+</head>
+<body>
+  <h2>Find Nearby Events</h2>
+  <button onclick="getLocation()">Find Nearby Events</button>
+  <p id="locationInfo"></p>
+
+  <script>
+    function getLocation() {
+      if (!navigator.geolocation) {
+        document.getElementById("locationInfo").textContent = "Geolocation not supported.";
+        return;
+      }
+
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const lat = position.coords.latitude;
+          const lon = position.coords.longitude;
+          document.getElementById("locationInfo").textContent =
+            `Your Coordinates: Latitude ${lat}, Longitude ${lon}`;
+        },
+        (error) => {
+          document.getElementById("locationInfo").textContent = "Permission denied or timeout.";
+        },
+        { enableHighAccuracy: true, timeout: 5000 }
+      );
+    }
+  </script>
+</body>
+</html>
