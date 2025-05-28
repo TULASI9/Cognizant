@@ -1,0 +1,24 @@
+a:link {
+  color: #1e88e5;
+}
+
+a:visited {
+  color: #6a1b9a;
+}
+
+a:hover {
+  color: #f44336;
+}
+
+a:active {
+  color: #004d40;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px 0;
+}
